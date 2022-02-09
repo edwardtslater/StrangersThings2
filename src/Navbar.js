@@ -13,7 +13,7 @@ const Navbar = ({ user, lsToken, setToken, setUser }) => {
                 {user && <span>Welcome {user.username}</span>}
                 <Link to="/Posts">Home</Link>
                 <Link to="/Profile">Profile</Link>
-                <Link to="/NewPosts">New Post</Link>
+                <Link to="/NewPost">New Post</Link>
                 <Link to="/Login" >Login</Link>
             </div>
             
