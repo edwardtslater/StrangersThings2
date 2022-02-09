@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
-
-const BASE_URL =
-    "https://strangers-things.herokuapp.com/api/2110-ftb-et-web-pt";
+import { API } from "./App"
 
 const Login = () => {
     const [username, setUsername] = useState("");
@@ -13,7 +11,7 @@ const Login = () => {
     const handleSubmit = async (event) => {
         event.preventDefault();
 
-        const response = await fetch(`${BASE_URL}/users/login`, {
+        const response = await fetch(`${ API }/users/login`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -49,7 +47,6 @@ const Login = () => {
                     placeholder="Enter Username"
                     onChange={(event) => setUsername(event.target.value)}
                 ></input>
-
                 <label>Password</label>
                 <input
                     type="text"
