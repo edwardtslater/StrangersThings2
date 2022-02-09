@@ -11,7 +11,7 @@ const Navbar = ({ user, lsToken, setToken, setUser }) => {
             <div className="navbar">
                 <h1>Stranger's Things</h1>
                 {user && <span>Welcome {user.username}</span>}
-                <Link to="/">Home</Link>
+                <Link to="/Posts">Home</Link>
                 <Link to="/Profile">Profile</Link>
                 <Link to="/NewPosts">New Post</Link>
                 <Link to="/Login" >Login</Link>
